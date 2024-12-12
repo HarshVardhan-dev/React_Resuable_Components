@@ -7,6 +7,7 @@ import TrelloBoard from "./components/TrelloBoard/TrelloBoard";
 import LazyImageLoader from "./components/LazyImageLoader/LazyImageLoader";
 import DateRangePicker from "./components/AirbnbDatePicker/DateRangePicker";
 import SwipeableCards from "./components/TinderCards/SwipeableCards";
+import VideoPlayer from "./components/YoutubeVideoPlayer/VideoPlayer";
 
 function App() {
   const sampleImages = [
@@ -79,6 +80,15 @@ function App() {
           <h2>5. Tinder-Like Swipeable Cards</h2>
           <div style={{ display: "flex", justifyContent: "center" }}>
             <SwipeableCards />
+          </div>
+        </section>
+        <section>
+          <h2>6. YouTube-Like Video Player</h2>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <VideoPlayer
+              title="Sample Video"
+              url="https://www.w3schools.com/html/mov_bbb.mp4" // Example video
+            />
           </div>
         </section>
       </div>
